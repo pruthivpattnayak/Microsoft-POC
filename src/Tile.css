@@ -1,7 +1,4 @@
 .tileContainer{
-    padding-top: 2%;
-    padding-left: 3%;
-    padding-right: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,40 +10,90 @@
     height: 20vh;
     width: 30vw;
     color: #0065b3;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+    border-left: 0.4px solid gray;
+    border-right: 0.4px solid gray;
     border-bottom: 1px solid gray;
 }
 
-.tileBox2{
-    margin-left: 1%;
-    display: flex;
-    height: 20vh;
-    width: 30vw;
+.box {
+    padding-left: 1%;
     color: #0065b3;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+    transition: box-shadow .3s;
+    width: 30vw;
+    height: 20vh;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+  }
+
+  .box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+  .box-single {
+    padding-left: 1%;
+    color: #0065b3;
+    transition: box-shadow .3s;
+    width: 21vw;
+    height: 20vh;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius:10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    float: left;
+  }
+
+  .box-single:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+  .supportContainer{
+      display: block;
+      color: gray;
+  }
+
+  .textContainer{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Segoe UI', 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .supporttileContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.tileBox3{
-    margin-left: 1%;
-    display: flex;
-    height: 20vh;
-    width: 30vw;
-    color: #0065b3;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+p{
+    color: black;
+    font-size: small;
+    
 }
 
-.tileBox4{
-    margin-left: 1%;
+.parent{
+    background-color: #F2F2F2;
+}
+
+.footer{
     display: flex;
-    height: 20vh;
-    width: 30vw;
-    color: #0065b3;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+    background-color: #d9d9d9;
 }
